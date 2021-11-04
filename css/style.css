@@ -1,0 +1,1155 @@
+
+/*==============ROOT================ */
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@font-face {
+    font-family: 'font_nav';
+    src: url(../fonts/QuickSand/Quicksand-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'neon';
+    src: url(../fonts/Neon/Neoneon.otf);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: black;
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    margin:0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+/*==============HEADER================ */
+header{
+    height: 8rem;
+    background-color: rgb(0,0,0,0);
+    position: fixed;
+    z-index: 1000;
+    width:100vw;
+    padding-top: 3rem;
+}
+.menu_icon{
+    font-size: 3.0rem;
+    margin-left: 3.5rem;
+    transition: .5s;
+    cursor: pointer;
+    color: white;
+}
+.menu_icon:hover{
+    color: rgb(255, 136, 0);
+}
+/*==============SEC_01================ */
+#sec_01{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video{
+    position: absolute;
+    width: 100vw;
+    top:0;
+    z-index: -1;
+    margin-left: 0vw;
+    transition: 1s;
+}
+#logo{
+    width: 50rem;
+    position: fixed;
+    z-index: 1;
+}
+#menu{
+    font-family: 'font_nav';
+    position: fixed;
+    z-index: 999;
+    width: 22vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    padding-top: 25vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.2s linear;
+    
+}
+.ul_menu{
+    width: 100%;
+}
+.ul_menu > li{
+    cursor: pointer;
+    width: 100%;
+    padding: 2vh 7vw;
+
+}
+.ul_menu > li > a{
+    color: white;
+    font-family: 'font_nav';
+    font-size: 2.5rem;
+    transition: .4s;
+}
+.ul_menu > li:hover{
+    padding-left: 7.5vw;
+    text-shadow: 
+  .1vw 0vw .25vw #ffe6d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw #f28857, .2vw 0vw   0vw #f28857, .4vw 0vw   0vw #f28857,
+  .1vw 0vw  .1vw #f28857, .2vw 0vw  .1vw #f28857, .4vw 0vw  .1vw #f28857,
+  .1vw 0vw   2vw #f28857, .2vw 0vw   2vw #f28857, .4vw 0vw   2vw #f28857, 
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b, 
+  .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b,
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b;
+}
+/*==============SEC_02================ */
+#sec_02{
+    position: relative;
+    z-index: 2;
+    color: white;
+    height: 80vh;
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding: 20vw;
+}
+.div_txt01{
+font-size: 3.5rem;
+font-family: 'Oswald',sans-serif;
+}
+/*==============SEC_03================ */
+#sec_03{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+
+.des_link{
+    background-image: linear-gradient(135deg,rgb(236,104,28),rgb(238,114,30));
+
+}
+.aud_link{
+    background-image: linear-gradient(135deg,rgb(0,0,0),rgb(32,32,32));
+}
+.tec_link{
+    background-image: linear-gradient(135deg,rgb(74,39,109),rgb(95,48,139));
+}
+._container{
+    width:33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+._link{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+.background__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 33.33vw;
+    height: 50vh;
+}
+.palavra{
+    padding: .5rem 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 6.4rem;
+    font-family: 'neon';
+    height: 6.2rem;
+    color: white;
+    opacity: .3;
+    
+}
+.des__text{
+    height: 6rem;
+    letter-spacing: 3rem;
+    font-family: 'neon';
+    font-size: 7rem;
+    color: white;
+    opacity: .3;
+}
+.aud__text{
+    text-align: center;
+    font-family: 'neon';
+    letter-spacing: 4rem;
+    font-size: 7rem;
+    color: white;
+    opacity: .3;
+}
+.tec__text{
+    text-align: center;
+    font-family: 'neon';
+    letter-spacing: 1rem;
+    font-size: 6rem;
+    color: white;
+    opacity: .3;
+}
+.icones_setores{
+    position: absolute;
+    font-size: 7.0rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(26, 26, 26, 0.774);
+    z-index: 2;
+    transition: 1s;
+}
+._carrosel{
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container__img{
+    position: absolute;
+    z-index: 1;
+    width: 33.33vw;
+    height:100% ;
+    overflow: hidden;
+}
+.container__img--ul{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+.carrosel_des__{
+    width: 33.33vw;
+    position: relative;
+    animation: none;
+    transition: all .3s ease-in-out;
+    left: 0vw;
+}
+.carrosel_aud__{
+    width: 33.33vw;
+    position: relative;
+    animation: slide_img 10s infinite ease-in;
+}
+.carrosel_tec__{
+    width: 33.33vw;
+    position: relative;
+    animation: slide_img 10s infinite ease-in;
+}
+@keyframes slide_img{
+    0%{left: 0vw;}
+    20%{left: 0vw;}
+    40%{left: -33.33vw;}
+    60%{left: -33.33vw;}
+    80%{left: -66.66vw;}
+    100%{left: -66.66vw;}
+}
+.img__carrosel{
+    width: 100%;
+    height: 50%;
+}
+.container__dots{
+    opacity: 0;
+    padding: 2vw;
+    width: 98%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    transition: .6s;
+}
+
+.dot{
+    background-color: white;
+    width: .5vw;
+    height: .5vw;
+    margin-left: 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+}
+.dot:hover{
+    transform: scale(1.8);
+}
+.container__buttons{
+    opacity: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    transition: .6s;
+}
+.__button{
+    font-size: 5.0rem;
+    height: 5.0rem;
+    color: white;
+    background-color: transparent;
+    margin:0 5%;
+    cursor: pointer;
+    transition: .2s;
+}
+.__button:hover{
+    transform: scale(1.4);
+}
+.container__call_button{
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    height: 28%;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .6s;
+}
+.call__button{
+    background-color: white;
+    width: 20vw;
+    height: 6vh;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+.call__button:hover{
+    transform: scale(1.1);
+}
+.call__button > .text{
+    font-family:'font_nav';
+}
+/*==============SEC_04================ */
+#sec_04{
+    position: relative;
+    height: 70vh;
+    width: 100vw;
+    z-index: 2;
+    padding: 0%;
+    background-color: rgb(255,255,255);
+}
+.sec_04_titulo{
+    display: block;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    padding-top: 2vh;
+    color: black;
+}
+.sec_04_titulo .texto{
+    font-family: 'font_nav',sans-serif;
+    font-size: 3.0rem;
+}
+.container_logos_ul{
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
+    height: 100% ;
+    flex-wrap: wrap;
+    padding: 5vh 2vw;
+}
+.container_logos_li{
+    background-color: rgba(0, 0, 0, 0.473);
+    width: 18vw;
+    height: 20vh;
+    
+}
+.container_logos_li >img{
+    width: 15vw;
+    transform: translate(10%,10%);
+}
+/*==============SEC_05================ */
+#sec_05{
+    font-family: 'font_nav';
+    position: relative;
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: black;
+    color: white;
+}
+#sec_05 .img{
+    border-radius: 50%;
+}
+.depoimentos{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5vw;
+}
+.depoimentos .container{
+    width: 33vw;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-left: 30px;
+}
+.depoimentos .nome{
+    font-size: 1.9rem;
+    color: rgb(248, 149, 113);
+}
+.depoimentos .cargo {
+    font-size: 1.6rem;
+    color: rgb(250, 109, 58);
+}
+.depoimentos .depoimento{
+    font-size: 2rem;
+    word-wrap: break-word;
+}
+/*==============SEC_06================ */
+#sec_06{
+    font-family: 'font_nav';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 40vh;
+    width: 100vw;
+    background-color: rgb(250, 237, 223);
+    color: white;
+    text-align: center;
+}
+.titulo{
+    color: black;
+    font-size: 2.0rem;
+    width: 40vw;
+    word-wrap: break-word;
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    font-weight: bold;
+    font-size: 2.0rem;
+    margin-left: 5vw;
+}
+.form .email{
+    background-color: rgb(250, 237, 223);
+    font-size: 2.0rem;
+    box-shadow:  -2px -2px 2px rgb(255, 244, 233),
+                 1px 1px 2px rgb(207,196,184);
+    border-radius: 3px;
+    height: 3vw;
+    margin-left: 15px;
+}
+.form .button{
+    height: 3vw;
+    border: none;
+    background-color: rgb(250, 237, 223);
+    box-shadow:  -2px -2px 2px rgb(255, 244, 233),
+                 1px 1px 2px rgb(207,196,184);
+    color: black;
+    border-radius: 3px;
+    font-size: 2.0rem;
+    margin-left: 15px;
+    padding: .5vw;
+}
+.form .button:hover{
+    cursor: pointer;
+}
+/*==============SEC_07================ */
+#sec_07{
+    font-family: 'font_nav';
+    position: relative;
+    display: flex;
+    height: 20vh;
+    width: 100vw;
+    z-index: 2;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+.redes_sociais_icons{
+    font-size: 3rem;
+}
+.redes_sociais{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.redes_sociais > li{
+    margin-left: 3vw;
+}
+.container__Logo{
+    display: flex;
+}
+.img__logo{
+    width: 7vw;
+    margin-right: 2.5vw;
+}
+@media (min-width:2001px) and (max-width:3000px){
+    html{
+        font-size: 130%;
+    }
+    #logo{
+        font-size: 10rem;
+    }
+    #sec_04{
+        height: 50vh;
+    }
+    .depoimentos .nome{
+        font-size: 2.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 2.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+}
+@media (min-width:1440px) and (max-width:2000px){
+    html{
+        font-size: 90%;
+    }
+    #sec_04{
+        height: 50vh;
+    }
+    .depoimentos .nome{
+        font-size: 2.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 2.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 2rem;
+        word-wrap: break-word;
+    }
+}
+@media (min-width:1024px) and (max-width:1439px){
+    html{
+        font-size: 50%;
+    }
+    #sec_04{
+        height: 55vh;
+    }
+    .call__button .text{
+        font-size: 2rem;
+    }
+    .depoimentos .nome{
+        font-size: 1.9rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 1.6rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 1.7rem;
+        word-wrap: break-word;
+    }
+   
+}
+@media (min-width:768px) and (max-width:1023px) and (orientation: portrait){
+    html{
+        font-size: 45%;
+    }
+    #logo{
+        width: 40rem;
+    }
+    #sec_02{
+        height: 70vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
+    }
+    #sec_04{
+        height: 40vh;
+    }
+    .sec_04_titulo{
+        height: 5vh;
+    }
+    .call__button .text{
+        font-size: 2rem;
+    }
+    .depoimentos .nome{
+        font-size: 1.9rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 1.6rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 1.9rem;
+        word-wrap: break-word;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) and (orientation: landscape){
+    html{
+        font-size: 45%;
+    }
+    #logo{
+        width: 35rem;
+    }
+    #sec_02{
+        height: 70vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
+    }
+    #sec_04{
+        height: 40vh;
+    }
+    .sec_04_titulo{
+        height: 5vh;
+    }
+    .call__button .text{
+        font-size: 2rem;
+    }
+    #sec_05{
+        height: 85vh;
+    }
+    .depoimentos .nome{
+        font-size: 1.9rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 1.6rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 1.9rem;
+        word-wrap: break-word;
+    }
+}
+@media (min-width:425px) and (max-width:767px) and (orientation: portrait){
+    html{
+        font-size: 25%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 10vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 80vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 30vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
+@media (min-width:425px) and (max-width:767px) and (orientation: landscape){
+    html{
+        font-size: 25%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 15vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 115vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 30vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
+@media (min-width:375px) and (max-width:424px) and (orientation: portrait){
+    html{
+        font-size: 23%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 10vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 80vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 30vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
+@media (min-width:375px) and (max-width:424px) and (orientation: landscape){
+    html{
+        font-size: 23%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 15vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 125vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 35vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
+@media (min-width:320px) and (max-width:374px) and (orientation: portrait){
+    html{
+        font-size: 20%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 10vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 80vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 30vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
+@media (min-width:320px) and (max-width:374px) and (orientation: landscape){
+    html{
+        font-size: 20%;
+    }
+    #menu{
+        width: 30vw;
+    }
+    .menu_icon{
+        font-size: 6rem;
+    }
+    .ul_menu > li > a{
+        font-size: 5rem;
+    }
+    #sec_02{
+        height: 40vh;
+    }
+    #sec_03{
+        height: 60vh;
+    }
+    .background__text{
+        height: 30vh;
+    }
+    .call__button .text{
+        font-size: 2.5rem;
+    }
+    #sec_04{
+        height: 30vh;
+    }
+    .depoimentos{
+        flex-wrap: wrap;
+    }
+    .container_logos_ul{
+        padding: 0;
+    }
+    .container_logos_li{
+        height: 10vh;
+        width: 25vw;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 80vh;
+    }
+    .depoimentos .img{
+        width: 20vw;
+    }
+    .depoimentos .nome{
+        font-size: 3.5rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 3.2rem;
+        color: rgb(250, 109, 58);
+    }
+    .depoimentos .depoimento{
+        font-size: 3rem;
+        word-wrap: break-word;
+    }
+    #sec_06{
+        height: 30vh;
+    }
+    .titulo{
+        font-size: 4rem;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1vh;
+        font-size: 4rem;
+    }
+    .form .email{
+        margin: 3vh 0vh;
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .form .button{
+        font-size: 4rem;
+        height: 7vw;
+    }
+    .img__logo{
+        width: 15rem;
+    }
+}
