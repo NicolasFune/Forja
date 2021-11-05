@@ -238,19 +238,23 @@ font-family: 'Oswald',sans-serif;
 .carrosel_des__{
     width: 33.33vw;
     position: relative;
-    animation: none;
+    animation: slide_img 10s infinite ease-in;
     transition: all .3s ease-in-out;
-    left: 0vw;
+    
 }
 .carrosel_aud__{
+    
     width: 33.33vw;
     position: relative;
     animation: slide_img 10s infinite ease-in;
+    transition: all .3s ease-in-out;
 }
 .carrosel_tec__{
+    
     width: 33.33vw;
     position: relative;
     animation: slide_img 10s infinite ease-in;
+    transition: all .3s ease-in-out;
 }
 @keyframes slide_img{
     0%{left: 0vw;}
@@ -285,6 +289,15 @@ font-family: 'Oswald',sans-serif;
     border-radius: 50%;
     cursor: pointer;
     transition: .2s;
+}
+#dot_01_des{
+    background-color: black;
+}
+#dot_01_aud{
+    background-color: black;
+}
+#dot_01_tec{
+    background-color: black;
 }
 .dot:hover{
     transform: scale(1.8);
