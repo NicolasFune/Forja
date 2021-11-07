@@ -543,11 +543,17 @@ font-family: 'Oswald',sans-serif;
     html{
         font-size: 90%;
     }
+    #logo{
+        width: 35vw;
+    }
+    .menu_icon{
+        font-size: 3rem;
+    }
     #sec_03{
-        height: 80vh;
+        height: 100vh;
     }
     .background__text{
-        height: 40vh;
+        height: 50vh;
     }
     #sec_04{
         height: 50vh;
