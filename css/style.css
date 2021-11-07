@@ -215,7 +215,7 @@ font-family: 'Oswald',sans-serif;
 ._carrosel{
     background-color: black;
     width: 100%;
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -227,7 +227,7 @@ font-family: 'Oswald',sans-serif;
     position: absolute;
     z-index: 1;
     width: 33.33vw;
-    height:100% ;
+    height: 100%;
     overflow: hidden;
 }
 .container__img--ul{
@@ -543,6 +543,12 @@ font-family: 'Oswald',sans-serif;
     html{
         font-size: 90%;
     }
+    #sec_03{
+        height: 80vh;
+    }
+    .background__text{
+        height: 40vh;
+    }
     #sec_04{
         height: 50vh;
     }
@@ -562,6 +568,12 @@ font-family: 'Oswald',sans-serif;
 @media (min-width:1024px) and (max-width:1439px){
     html{
         font-size: 50%;
+    }
+    #sec_03{
+        height: 65vh;
+    }
+    .background__text{
+        height: 35vh;
     }
     #sec_04{
         height: 55vh;
@@ -595,6 +607,12 @@ font-family: 'Oswald',sans-serif;
     }
     .div_txt01{
         font-size: 3rem;
+    }
+    #sec_03{
+        height: 50vh;
+    }
+    .background__text{
+        height: 25vh;
     }
     #sec_04{
         height: 40vh;
@@ -673,10 +691,10 @@ font-family: 'Oswald',sans-serif;
         height: 40vh;
     }
     #sec_03{
-        height: 60vh;
+        height: 45vh;
     }
     .background__text{
-        height: 30vh;
+        height: 25vh;
     }
     .call__button .text{
         font-size: 2.5rem;
@@ -843,10 +861,10 @@ font-family: 'Oswald',sans-serif;
         height: 40vh;
     }
     #sec_03{
-        height: 60vh;
+        height: 45vh;
     }
     .background__text{
-        height: 30vh;
+        height: 25vh;
     }
     .call__button .text{
         font-size: 2.5rem;
@@ -1013,10 +1031,10 @@ font-family: 'Oswald',sans-serif;
         height: 40vh;
     }
     #sec_03{
-        height: 60vh;
+        height: 35vh;
     }
     .background__text{
-        height: 30vh;
+        height: 18vh;
     }
     .call__button .text{
         font-size: 2.5rem;
