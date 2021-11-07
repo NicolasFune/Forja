@@ -1,3 +1,7 @@
+sec_02.addEventListener('onscroll',function sec_02OnScroll() {
+    alert('scroll')
+    logo.style.opacity = 0
+})
 prevSlide__des.addEventListener('click',function VoltarSlide(){
     
     leftPositionSlide = leftPositionSlide + 33.33

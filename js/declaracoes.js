@@ -45,3 +45,5 @@ let dot_03_aud = document.getElementById('dot_03_aud')
 let dot_01_tec = document.getElementById('dot_01_tec')
 let dot_02_tec = document.getElementById('dot_02_tec')
 let dot_03_tec = document.getElementById('dot_03_tec')
+
+let sec_02 = document.getElementById('sec_02')
