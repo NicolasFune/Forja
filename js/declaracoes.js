@@ -2,7 +2,6 @@ let bot_clicado = false
 let video = document.getElementById("video")
 let menu = document.getElementById("menu")
 let logo = document.getElementById("logo")
-let sec_01 = document.getElementById("sec_01")
 let headerOpacity = document.getElementById('header').style.opacity
 let mouse__interaction__areas_des = document.getElementsByClassName('mouse__interaction__area_des')
 let leftPositionSlide = 0
@@ -46,4 +45,4 @@ let dot_01_tec = document.getElementById('dot_01_tec')
 let dot_02_tec = document.getElementById('dot_02_tec')
 let dot_03_tec = document.getElementById('dot_03_tec')
 
-let sec_02 = document.getElementById('sec_02')
+let sections = [document.getElementById("sec_01"),document.getElementById("sec_02"),document.getElementById("sec_03"),document.getElementById("sec_04"),document.getElementById("sec_05"),document.getElementById("sec_06"),document.getElementById("sec_07")]
