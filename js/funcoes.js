@@ -357,16 +357,14 @@ Array.from(mouse__interaction__areas_tec).forEach(function name(item) {
 })
 //////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////
-window.addEventListener('resize', function resize() {
-    let videoHeight = video.clientHeight
-    sec_01.style.height = videoHeight+"px"
-}, true);
-window.addEventListener('resize', function resize() {
-    let videoHeight = video.clientHeight
-    sec_01.style.height = videoHeight+"px"
-}, false);
-//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
+
+window.addEventListener('resize',function name(params) {
+    alert(window.innerWidth)
+    if (window.innerWidth < 1239) {
+        sections[0].style.height = (window.innerWidth / 13) +'vh'
+        alert(sections[0].style.height)
+    }
+})
 function bot_menu_click(){
     if(bot_clicado==false){
         menu.style.visibility = "visible"

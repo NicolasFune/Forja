@@ -47,6 +47,7 @@ header{
 }
 .menu_icon:hover{
     color: rgb(255, 136, 0);
+    transform: scale(1.2);
 }
 /*==============SEC_01================ */
 #sec_01{
@@ -114,7 +115,7 @@ header{
     z-index: 2;
     color: white;
     height: 80vh;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100vw;
     display: flex;
     text-align: center;
@@ -167,7 +168,7 @@ font-family: 'Oswald',sans-serif;
     justify-content: space-around;
     align-items: center;
     width: 33.33vw;
-    height: 50vh;
+    height: 100%;
 }
 .palavra{
     padding: .5rem 2rem;
@@ -361,7 +362,7 @@ font-family: 'Oswald',sans-serif;
     width: 100vw;
     z-index: 2;
     padding: 0%;
-    background-color: white;
+    background-image: linear-gradient(50deg ,rgb(110, 110, 110) ,rgb(115,115,115),rgb(118,118,118) );
 }
 .container__sec_04{
     position: relative;
@@ -380,7 +381,7 @@ font-family: 'Oswald',sans-serif;
 }
 .sec_04_titulo .texto{
     font-family: 'font_nav',sans-serif;
-    font-size: 3.0rem;
+    font-size: 4rem;
 }
 .container_logos_ul{
     justify-content: space-around;
@@ -391,7 +392,6 @@ font-family: 'Oswald',sans-serif;
     padding: 5vh 2vw;
 }
 .container_logos_li{
-    background-color: rgba(0, 0, 0, 0.473);
     width: 18vw;
     height: 20vh;
     
@@ -563,10 +563,10 @@ font-family: 'Oswald',sans-serif;
         font-size: 3rem;
     }
     #sec_03{
-        height: 100vh;
+        height: 95vh;
     }
-    .background__text{
-        height: 50vh;
+    ._link{
+        height: 100%;
     }
     #sec_04{
         height: 50vh;
@@ -584,15 +584,15 @@ font-family: 'Oswald',sans-serif;
         word-wrap: break-word;
     }
 }
-@media (min-width:1024px) and (max-width:1439px){
+@media (min-width:1139px) and (max-width:1439px){
     html{
         font-size: 50%;
     }
     #sec_03{
-        height: 65vh;
+        height: 90vh;
     }
-    .background__text{
-        height: 35vh;
+    ._carrosel{
+        height: 50%;
     }
     #sec_04{
         height: 55vh;
@@ -614,7 +614,7 @@ font-family: 'Oswald',sans-serif;
     }
    
 }
-@media (min-width:768px) and (max-width:1023px) and (orientation: portrait){
+@media (min-width:768px) and (max-width:1138px) and (orientation: portrait){
     html{
         font-size: 45%;
     }
@@ -628,10 +628,10 @@ font-family: 'Oswald',sans-serif;
         font-size: 3rem;
     }
     #sec_03{
-        height: 50vh;
+        height: 55vh;
     }
-    .background__text{
-        height: 25vh;
+    ._link{
+        height: 100%;
     }
     #sec_04{
         height: 40vh;
@@ -655,7 +655,7 @@ font-family: 'Oswald',sans-serif;
         word-wrap: break-word;
     }
 }
-@media (min-width:768px) and (max-width:1023px) and (orientation: landscape){
+@media (min-width:768px) and (max-width:1138px) and (orientation: landscape){
     html{
         font-size: 45%;
     }
@@ -664,6 +664,12 @@ font-family: 'Oswald',sans-serif;
     }
     #sec_02{
         height: 70vh;
+    }
+    #sec_03{
+        height: 80vh;
+    }
+    .__link{
+        height: 100%;
     }
     .div_txt01{
         font-size: 3rem;
@@ -711,9 +717,6 @@ font-family: 'Oswald',sans-serif;
     }
     #sec_03{
         height: 45vh;
-    }
-    .background__text{
-        height: 25vh;
     }
     .call__button .text{
         font-size: 2.5rem;
@@ -797,9 +800,6 @@ font-family: 'Oswald',sans-serif;
     #sec_03{
         height: 60vh;
     }
-    .background__text{
-        height: 30vh;
-    }
     .call__button .text{
         font-size: 2.5rem;
     }
@@ -882,8 +882,8 @@ font-family: 'Oswald',sans-serif;
     #sec_03{
         height: 45vh;
     }
-    .background__text{
-        height: 25vh;
+    .__link{
+        height: 100%;
     }
     .call__button .text{
         font-size: 2.5rem;
@@ -967,9 +967,6 @@ font-family: 'Oswald',sans-serif;
     #sec_03{
         height: 60vh;
     }
-    .background__text{
-        height: 30vh;
-    }
     .call__button .text{
         font-size: 2.5rem;
     }
@@ -1052,9 +1049,6 @@ font-family: 'Oswald',sans-serif;
     #sec_03{
         height: 35vh;
     }
-    .background__text{
-        height: 18vh;
-    }
     .call__button .text{
         font-size: 2.5rem;
     }
@@ -1136,9 +1130,6 @@ font-family: 'Oswald',sans-serif;
     }
     #sec_03{
         height: 60vh;
-    }
-    .background__text{
-        height: 30vh;
     }
     .call__button .text{
         font-size: 2.5rem;
