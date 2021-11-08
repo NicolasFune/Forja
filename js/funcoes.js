@@ -363,6 +363,9 @@ window.addEventListener('resize',function name(params) {
         sections[0].style.height = (window.innerWidth / 13) +'vh'
     }
 })
+window.addEventListener('load',function name(params) {
+    alert('load')
+})
 function bot_menu_click(){
     if(bot_clicado==false){
         menu.style.visibility = "visible"

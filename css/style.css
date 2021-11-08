@@ -20,6 +20,16 @@ body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+body::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 5px;
+}
 *{
     margin:0%;
     padding: 0%;
@@ -468,6 +478,7 @@ font-family: 'Oswald',sans-serif;
     font-weight: bold;
     font-size: 2.0rem;
     margin-left: 5vw;
+    align-items: center;
 }
 .form .email{
     background-color: rgb(250, 237, 223);
@@ -489,9 +500,11 @@ font-family: 'Oswald',sans-serif;
     font-size: 2.0rem;
     margin-left: 15px;
     padding: .5vw;
+    transition: .2s;
 }
 .form .button:hover{
     cursor: pointer;
+    transform: scale(1.1)
 }
 /*==============SEC_07================ */
 #sec_07{
