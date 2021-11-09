@@ -359,12 +359,17 @@ Array.from(mouse__interaction__areas_tec).forEach(function name(item) {
 //////////////////////////////////////////////////////////////////////////////////////////
 
 window.addEventListener('resize',function name(params) {
-    if (window.innerWidth < 1239) {
-        sections[0].style.height = (window.innerWidth / 13) +'vh'
+    let windowWidth = window.innerWidth - 50
+    console.log(windowWidth)
+    let newSec01Height = windowWidth*0.56269863
+    if (windowWidth < 2300) {
+        sections[0].style.height = newSec01Height+'px'
+    }else{
+        sections[0].style.height = '100vh'
     }
 })
 window.addEventListener('load',function name(params) {
-    alert('load')
+    
 })
 function bot_menu_click(){
     if(bot_clicado==false){

@@ -54,6 +54,7 @@ header{
     transition: .5s;
     cursor: pointer;
     color: white;
+    opacity: .9;
 }
 .menu_icon:hover{
     color: rgb(255, 136, 0);
@@ -228,7 +229,7 @@ font-family: 'Oswald',sans-serif;
 ._carrosel{
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,8 +241,8 @@ font-family: 'Oswald',sans-serif;
     position: absolute;
     z-index: 1;
     width: 33.33vw;
-    height: 100%;
-    overflow: hidden;
+    height: 50%;
+    overflow:hidden;
 }
 .container__img--ul{
     display: flex;
@@ -279,7 +280,7 @@ font-family: 'Oswald',sans-serif;
 }
 .img__carrosel{
     width: 100%;
-    height: 50%;
+    height: 100%;
 }
 .container__dots{
     opacity: 0;
@@ -427,7 +428,7 @@ font-family: 'Oswald',sans-serif;
 .depoimentos{
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     padding: 5vw;
 }
@@ -438,11 +439,18 @@ font-family: 'Oswald',sans-serif;
     text-align: center;
     margin-left: 30px;
 }
+.depoimentos .img{
+    width: 16vw;
+    height: 16vw;
+}
 .depoimentos .nome{
+    height: 3vw;
+    text-align: center;
     font-size: 1.9rem;
     color: rgb(248, 149, 113);
 }
 .depoimentos .cargo {
+    height: 7vw;
     font-size: 1.6rem;
     color: rgb(250, 109, 58);
 }
@@ -542,15 +550,19 @@ font-family: 'Oswald',sans-serif;
     width: 7vw;
     margin-right: 2.5vw;
 }
-@media (min-width:2001px) and (max-width:3000px){
+@media (min-width:2601px){
     html{
         font-size: 130%;
     }
     #logo{
-        font-size: 10rem;
+        width: 30vw;
     }
-    #sec_04{
-        height: 50vh;
+    #sec_05{
+        height: 40vw;
+    }
+    .depoimentos .img{
+        width: 10vw;
+        height: 10vw;
     }
     .depoimentos .nome{
         font-size: 2.5rem;
@@ -559,652 +571,423 @@ font-family: 'Oswald',sans-serif;
     .depoimentos .cargo {
         font-size: 2.2rem;
         color: rgb(250, 109, 58);
+        height: 5vw;
     }
     .depoimentos .depoimento{
         font-size: 2rem;
         word-wrap: break-word;
     }
 }
-@media (min-width:1440px) and (max-width:2000px){
+@media (min-width:1951px) and (max-width:2600px){
     html{
         font-size: 90%;
     }
     #logo{
-        width: 35vw;
+        width: 40vw;
     }
     .menu_icon{
-        font-size: 3rem;
+        font-size: 4.5rem;
     }
     #sec_03{
-        height: 95vh;
-    }
-    ._link{
-        height: 100%;
+        height: 105vh;
     }
     #sec_04{
-        height: 50vh;
-    }
-    .depoimentos .nome{
-        font-size: 2.5rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 2.2rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 2rem;
-        word-wrap: break-word;
-    }
-}
-@media (min-width:1139px) and (max-width:1439px){
-    html{
-        font-size: 50%;
-    }
-    #sec_03{
-        height: 90vh;
-    }
-    ._carrosel{
-        height: 50%;
-    }
-    #sec_04{
-        height: 55vh;
-    }
-    .call__button .text{
-        font-size: 2rem;
-    }
-    .depoimentos .nome{
-        font-size: 1.9rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 1.6rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 1.7rem;
-        word-wrap: break-word;
-    }
-   
-}
-@media (min-width:768px) and (max-width:1138px) and (orientation: portrait){
-    html{
-        font-size: 45%;
-    }
-    #logo{
-        width: 40rem;
-    }
-    #sec_02{
-        height: 70vh;
-    }
-    .div_txt01{
-        font-size: 3rem;
-    }
-    #sec_03{
-        height: 55vh;
-    }
-    ._link{
-        height: 100%;
-    }
-    #sec_04{
-        height: 40vh;
-    }
-    .sec_04_titulo{
-        height: 5vh;
-    }
-    .call__button .text{
-        font-size: 2rem;
-    }
-    .depoimentos .nome{
-        font-size: 1.9rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 1.6rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 1.9rem;
-        word-wrap: break-word;
-    }
-}
-@media (min-width:768px) and (max-width:1138px) and (orientation: landscape){
-    html{
-        font-size: 45%;
-    }
-    #logo{
-        width: 35rem;
-    }
-    #sec_02{
-        height: 70vh;
-    }
-    #sec_03{
-        height: 80vh;
-    }
-    .__link{
-        height: 100%;
-    }
-    .div_txt01{
-        font-size: 3rem;
-    }
-    #sec_04{
-        height: 40vh;
-    }
-    .sec_04_titulo{
-        height: 5vh;
-    }
-    .call__button .text{
-        font-size: 2rem;
+        height: 45vh;
     }
     #sec_05{
+        height: 40vw;
+    }
+    .depoimentos .img{
+        width: 12vw;
+        height: 12vw;
+    }
+    .depoimentos .nome{
+        font-size: 3rem;
+        color: rgb(248, 149, 113);
+    }
+    .depoimentos .cargo {
+        font-size: 2.8rem;
+        color: rgb(250, 109, 58);
+        height: 4vw;
+    }
+    .depoimentos .depoimento{
+        font-size: 2.5rem;
+        word-wrap: break-word;
+    }
+    #sec_06 .titulo{
+        font-size: 3rem;
+    }
+    #sec_06 .form{
+        font-size: 3rem;
+    }
+    #sec_06 .email{
+        font-size: 3rem;
+    }
+    #sec_06 .button{
+        font-size: 3rem;
+    }
+}
+@media (min-width:1401px) and (max-width:1950px){
+    html{
+        font-size: 85%;
+    }
+    #logo{
+        width: 40vw;
+    }
+    .menu_icon{
+        font-size: 4.5rem;
+    }
+    #sec_03{
         height: 85vh;
     }
-    .depoimentos .nome{
-        font-size: 1.9rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 1.6rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 1.9rem;
-        word-wrap: break-word;
-    }
-}
-@media (min-width:425px) and (max-width:767px) and (orientation: portrait){
-    html{
-        font-size: 25%;
-    }
-    #menu{
-        width: 30vw;
-    }
-    .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
-    }
-    #sec_02{
-        height: 40vh;
-    }
-    #sec_03{
+    #sec_04{
         height: 45vh;
     }
-    .call__button .text{
-        font-size: 2.5rem;
-    }
-    #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 10vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 80vh;
-    }
     .depoimentos .img{
-        width: 20vw;
+        width: 12vw;
+        height: 12vw;
     }
     .depoimentos .nome{
-        font-size: 3.5rem;
+        margin: 1vh;
+        font-size: 2.5rem;
         color: rgb(248, 149, 113);
     }
     .depoimentos .cargo {
-        font-size: 3.2rem;
+        margin: 1vh;
+        font-size: 2.2rem;
         color: rgb(250, 109, 58);
+        height: 4vw;
     }
     .depoimentos .depoimento{
+        margin-top: 1vh;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    #sec_06 .titulo{
         font-size: 3rem;
-        word-wrap: break-word;
     }
-    #sec_06{
-        height: 30vh;
+    #sec_06 .form{
+        font-size: 3rem;
     }
-    .titulo{
-        font-size: 4rem;
+    #sec_06 .email{
+        font-size: 3rem;
     }
-    .form{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
+    #sec_06 .button{
+        font-size: 3rem;
     }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
+    
+   
 }
-@media (min-width:425px) and (max-width:767px) and (orientation: landscape){
+@media (min-width:1025px) and (max-width:1400px){
     html{
-        font-size: 25%;
+        font-size: 85%;
     }
-    #menu{
-        width: 30vw;
+    #logo{
+        width: 40vw;
     }
     .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     #sec_02{
-        height: 40vh;
+        height: 50vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
     }
     #sec_03{
-        height: 60vh;
+        height: 70vh;
     }
-    .call__button .text{
-        font-size: 2.5rem;
+    .letra{
+        font-size: 5rem;
     }
     #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 15vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 115vh;
-    }
-    .depoimentos .img{
-        width: 20vw;
-    }
-    .depoimentos .nome{
-        font-size: 3.5rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 3.2rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 3rem;
-        word-wrap: break-word;
-    }
-    #sec_06{
-        height: 30vh;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
-    .form{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
-    }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
-}
-@media (min-width:375px) and (max-width:424px) and (orientation: portrait){
-    html{
-        font-size: 23%;
-    }
-    #menu{
-        width: 30vw;
-    }
-    .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
-    }
-    #sec_02{
-        height: 40vh;
-    }
-    #sec_03{
         height: 45vh;
     }
-    .__link{
-        height: 100%;
-    }
-    .call__button .text{
-        font-size: 2.5rem;
-    }
-    #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 10vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 80vh;
-    }
     .depoimentos .img{
-        width: 20vw;
+        width: 18vw;
+        height: 18vw;
     }
     .depoimentos .nome{
-        font-size: 3.5rem;
+        margin: 1vh;
+        font-size: 2.5rem;
         color: rgb(248, 149, 113);
     }
     .depoimentos .cargo {
-        font-size: 3.2rem;
+        margin: 2vh;
+        font-size: 2.2rem;
         color: rgb(250, 109, 58);
+        height: 9vw;
     }
     .depoimentos .depoimento{
-        font-size: 3rem;
-        word-wrap: break-word;
+        margin-top: 1vh;
+        font-size: 2rem;
+        text-align: left;
     }
     #sec_06{
-        height: 30vh;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
-    .form{
         flex-direction: column;
-        align-items: center;
         justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
     }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
+    #sec_06 .titulo{
+        font-size: 2.5rem;
+        text-align: center;
     }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
-}
-@media (min-width:375px) and (max-width:424px) and (orientation: landscape){
-    html{
-        font-size: 23%;
-    }
-    #menu{
-        width: 30vw;
-    }
-    .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
-    }
-    #sec_02{
-        height: 40vh;
-    }
-    #sec_03{
-        height: 60vh;
-    }
-    .call__button .text{
+    #sec_06 .form{
+        display: flex;
+        justify-content: space-around;
         font-size: 2.5rem;
     }
-    #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 15vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 125vh;
-    }
-    .depoimentos .img{
-        width: 20vw;
-    }
-    .depoimentos .nome{
-        font-size: 3.5rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 3.2rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 3rem;
-        word-wrap: break-word;
-    }
-    #sec_06{
-        height: 35vh;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
-    .form{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
-    }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
-}
-@media (min-width:320px) and (max-width:374px) and (orientation: portrait){
-    html{
-        font-size: 20%;
-    }
-    #menu{
-        width: 30vw;
-    }
-    .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
-    }
-    #sec_02{
-        height: 40vh;
-    }
-    #sec_03{
-        height: 35vh;
-    }
-    .call__button .text{
+    #sec_06 .email{
         font-size: 2.5rem;
+        height: 3rem;
     }
-    #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 10vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 80vh;
-    }
-    .depoimentos .img{
-        width: 20vw;
-    }
-    .depoimentos .nome{
-        font-size: 3.5rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 3.2rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 3rem;
-        word-wrap: break-word;
-    }
-    #sec_06{
-        height: 30vh;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
-    .form{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
-    }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
-}
-@media (min-width:320px) and (max-width:374px) and (orientation: landscape){
-    html{
-        font-size: 20%;
-    }
-    #menu{
-        width: 30vw;
-    }
-    .menu_icon{
-        font-size: 6rem;
-    }
-    .ul_menu > li > a{
-        font-size: 5rem;
-    }
-    #sec_02{
-        height: 40vh;
-    }
-    #sec_03{
-        height: 60vh;
-    }
-    .call__button .text{
+    #sec_06 .button{
         font-size: 2.5rem;
+        height: 3rem;
     }
-    #sec_04{
-        height: 30vh;
-    }
-    .depoimentos{
-        flex-wrap: wrap;
-    }
-    .container_logos_ul{
-        padding: 0;
-    }
-    .container_logos_li{
-        height: 10vh;
-        width: 25vw;
-    }
-    .container_logos_li > img{
-        width: 20vw;
-    }
-    #sec_05{
-        height: 80vh;
-    }
-    .depoimentos .img{
-        width: 20vw;
-    }
-    .depoimentos .nome{
-        font-size: 3.5rem;
-        color: rgb(248, 149, 113);
-    }
-    .depoimentos .cargo {
-        font-size: 3.2rem;
-        color: rgb(250, 109, 58);
-    }
-    .depoimentos .depoimento{
-        font-size: 3rem;
-        word-wrap: break-word;
-    }
-    #sec_06{
-        height: 30vh;
-    }
-    .titulo{
-        font-size: 4rem;
-    }
-    .form{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        padding: 1vh;
-        font-size: 4rem;
-    }
-    .form .email{
-        margin: 3vh 0vh;
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .form .button{
-        font-size: 4rem;
-        height: 7vw;
-    }
-    .img__logo{
-        width: 15rem;
-    }
+    
+   
 }
 
+@media (min-width:768px) and (max-width:1024px){
+    html{
+        font-size: 65%;
+    }
+    #logo{
+        width: 50vw;
+    }
+    .menu_icon{
+        font-size: 4.5rem;
+    }
+    #sec_02{
+        height: 55vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
+    }
+    #sec_03{
+        height: 50vh;
+    }
+    .letra{
+        font-size: 5rem;
+    }
+    #sec_04{
+        height: 35vh;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 50vh;
+    }
+    .depoimentos .img{
+        width: 18vw;
+        height: 18vw;
+    }
+    .depoimentos .nome{
+        margin: 1vh;
+        font-size: 2.5rem;
+        color: rgb(248, 149, 113);
+        height: 8vw;
+    }
+    .depoimentos .cargo {
+        margin: 2vh;
+        font-size: 2.2rem;
+        color: rgb(250, 109, 58);
+        height: 12vw;
+    }
+    .depoimentos .depoimento{
+        margin-top: 1vh;
+        font-size: 2rem;
+        text-align:left;
+    }
+    #sec_06{
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #sec_06 .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #sec_06 .form{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5rem;
+    }
+    #sec_06 .email{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_06 .button{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_07{
+        height: 10vh;
+    }
+}
+@media (min-width:420px) and (max-width:767px){
+    html{
+        font-size: 40%;
+    }
+    #logo{
+        width: 50vw;
+    }
+    .menu_icon{
+        font-size: 4.5rem;
+    }
+    #sec_02{
+        height: 45vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
+    }
+    #sec_03{
+        height: 50vh;
+    }
+    .__link{
+        font-size: 2rem;
+    }
+    .letra{
+        font-size: 5rem;
+    }
+    #sec_04{
+        height: 35vh;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 50vh;
+    }
+    .depoimentos .img{
+        width: 18vw;
+        height: 18vw;
+    }
+    .depoimentos .nome{
+        margin: 1vh;
+        font-size: 2.5rem;
+        color: rgb(248, 149, 113);
+        height: 8vw;
+    }
+    .depoimentos .cargo {
+        margin: 2vh;
+        font-size: 2.2rem;
+        color: rgb(250, 109, 58);
+        height: 12vw;
+    }
+    .depoimentos .depoimento{
+        margin-top: 1vh;
+        font-size: 2rem;
+        text-align:left;
+    }
+    #sec_06{
+        height: 25vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #sec_06 .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #sec_06 .form{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5rem;
+    }
+    #sec_06 .email{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_06 .button{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_07{
+        height: 10vh;
+    }
+}
+@media (min-width:320px) and (max-width:419px){
+    html{
+        font-size: 25%;
+    }
+    #logo{
+        width: 50vw;
+    }
+    .menu_icon{
+        font-size: 4.5rem;
+    }
+    #sec_02{
+        height: 45vh;
+    }
+    .div_txt01{
+        font-size: 3rem;
+    }
+    #sec_03{
+        height: 35vh;
+    }
+    .__link{
+        font-size: 2rem;
+    }
+    .letra{
+        font-size: 5rem;
+    }
+    #sec_04{
+        height: 20vh;
+    }
+    .container_logos_ul{
+        padding: 0%;
+    }
+    .container_logos_li > img{
+        width: 20vw;
+    }
+    #sec_05{
+        height: 40vh;
+    }
+    .depoimentos .img{
+        width: 15vw;
+        height: 15vw;
+    }
+    .depoimentos .nome{
+        margin: 1vh;
+        font-size: 2.5rem;
+        color: rgb(248, 149, 113);
+        height: 8vw;
+    }
+    .depoimentos .cargo {
+        margin: 2.2vh;
+        font-size: 2rem;
+        color: rgb(250, 109, 58);
+        height: 7vw;
+    }
+    .depoimentos .depoimento{
+        margin-top: 1vh;
+        font-size: 2rem;
+        text-align:left;
+    }
+    #sec_06{
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #sec_06 .titulo{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    #sec_06 .form{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2.5rem;
+    }
+    #sec_06 .email{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_06 .button{
+        font-size: 2.5rem;
+        height: 3rem;
+    }
+    #sec_07{
+        height: 10vh;
+    }
+}
