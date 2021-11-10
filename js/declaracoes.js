@@ -2,7 +2,6 @@ let bot_clicado = false
 let video = document.getElementById("video")
 let menu = document.getElementById("menu")
 let logo = document.getElementById("logo")
-let headerOpacity = document.getElementById('header').style.opacity
 let mouse__interaction__areas_des = document.getElementsByClassName('mouse__interaction__area_des')
 let leftPositionSlide = 0
 let index = 0

@@ -6,8 +6,6 @@ window.addEventListener('',function OnLoad(params) {
     animation_02.setAttribute('data-aos-duration','400')
     animation_02.setAttribute('data-aos-easing','ease-in-out')
 })
-
-
 window.document.addEventListener('scroll',function onScroll(params) {
     if (window.innerWidth > 1024){
         _header.style.backgroundColor = 'rgb(0,0,0,'+ window.scrollY/1000 +')'

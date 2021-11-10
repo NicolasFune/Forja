@@ -1,6 +1,7 @@
 /*==============ROOT================ */
 @charset "UTF-08";
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @font-face {
     font-family: 'font_nav';
     src: url(../fonts/QuickSand/Quicksand-VariableFont_wght.ttf);
@@ -90,4 +91,63 @@ body::-webkit-scrollbar{
 }
 .menu_li:hover{
     opacity: 1;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(135deg ,#0f0a20 ,#0e0920,#0f0a20  );
+}
+
+.container--01{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+.info .img--container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: #f2561D;
+    text-shadow: .4vw .4vw .8vw rgba(0, 0, 0, 0.568);
+    font-size: 40rem;
+}
+.info .fa-file-code{
+  background-image: linear-gradient(135deg, #f2561D,#6a37d8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  
+}
+.info .txt--container{
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    color: #e47b55;
+    text-shadow: .2vw .2vw .4vw rgba(0, 0, 0, 0.568);
+    font-size: 5rem;
+}
+.seta--container{
+    height: 10vh;
+    font-size: 8rem;
+    
+    opacity: .2;
+}
+.seta--container > a{
+    color: #e47b55;
+}
+.seta{
+    position: absolute;
+    left: 50vw;
+    transform: translateX(-50%);
+    top: 89vh;
+    animation: cima-baixo 2s infinite ease-in-out;
+}
+@keyframes cima-baixo{
+    50%{top:91vh;}
 }
