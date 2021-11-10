@@ -1,6 +1,9 @@
-sec_02.addEventListener('onscroll',function sec_02OnScroll() {
-    alert('scroll')
-    logo.style.opacity = 0
+window.document.addEventListener('scroll',function onScroll(params) {
+    if (window.innerWidth > 1024){
+        _header.style.backgroundColor = 'rgb(0,0,0,'+ window.scrollY/1000 +')'
+    header_img.style.opacity = window.scrollY/1000
+    }
+    
 })
 prevSlide__des.addEventListener('click',function VoltarSlide(){
     

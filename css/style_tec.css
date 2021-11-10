@@ -1,0 +1,93 @@
+/*==============ROOT================ */
+@charset "UTF-08";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@font-face {
+    font-family: 'font_nav';
+    src: url(../fonts/QuickSand/Quicksand-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: 'neon';
+    src: url(../fonts/Neon/Neoneon.otf);
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 2px;
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(112, 0, 146);
+    border-radius: 5px;
+}
+*{
+    margin:0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.menu--container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+}
+.menu{
+    position: fixed;
+    background-image: linear-gradient(to right,#191038 , #160e31,#22174b);
+    width: 65%;
+    height: 8vh;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu > img{
+    margin-left: 20px;
+    width: 52px;
+}
+.menu .ul{
+    
+    display: flex;
+    justify-content: space-around;
+    width: 55vw;
+    height: 8vh;
+    margin-right: 20px;
+    align-items: center;
+}
+.menu_li{
+    font-family: 'font_nav' ;
+    font-weight: 700;
+    color: #7d47f3;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 12vw;
+    line-height: 8vh;
+    height: 8vh; 
+    transition: .3s ease-in-out;
+    opacity: .7;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.menu_li[isEnable="Yes"]{
+    border-bottom: solid 3px #6a37d8;
+    border-radius: 1px;
+    opacity: 1;
+}
+.menu_li:hover{
+    opacity: 1;
+}

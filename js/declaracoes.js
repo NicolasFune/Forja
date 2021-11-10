@@ -46,3 +46,6 @@ let dot_02_tec = document.getElementById('dot_02_tec')
 let dot_03_tec = document.getElementById('dot_03_tec')
 
 let sections = [document.getElementById("sec_01"),document.getElementById("sec_02"),document.getElementById("sec_03"),document.getElementById("sec_04"),document.getElementById("sec_05"),document.getElementById("sec_06"),document.getElementById("sec_07")]
+
+const _header = document.getElementsByTagName("header")[0]
+const header_img = document.getElementById('header_img')
